@@ -15,13 +15,16 @@ export default function Page({ params }: { params: { slug: string } }) {
         {result.length > 0 ? (
           result.map((product) => (
             <ProductCard
-              key={product.id}
-              title={product.title}
-              price={product.price}
-              image={product.image as StaticImageData}
-              category={product.category}
-              id={product.id}
-              sale={product.sale}
+            key={product.id}
+            title={product.title}
+            price={product.price}
+            image={product.image as StaticImageData}
+            category={product.category}
+            id={product.id}
+            sale={product.sale}
+            range={product.range}
+            sortby={product.sortby}
+            rating={product.rating}
             />
           ))
         ) : (

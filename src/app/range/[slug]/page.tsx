@@ -23,6 +23,8 @@ export default function Page({ params }: { params: { slug: string } }) {
               id={product.id}
               sale={product.sale}
               range={product.range}
+              sortby={product.sortby}
+              rating={product.rating}
             />
           ))
         ) : (

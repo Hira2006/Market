@@ -35,7 +35,11 @@ const TrendingProduct = () => {
           title={product.title} 
           price={product.price}
           category={product.category} 
+          range={product.range}
+          rating={product.rating}
+          sortby={product.sortby}
           sale={product.sale}/>
+          
           ))}
     </div>
             </div>

@@ -17,10 +17,13 @@ export default function Page({ params }: { params: { slug: string } }) {
             <ProductCard
               key={product.id}
               title={product.title}
-              price={product.price}
+              price={product.price }
               image={product.image as StaticImageData}
               category={product.category}
               id={product.id}
+              range={product.range}
+          rating={product.rating}
+          sortby={product.sortby}
               sale={product.sale}
             />
           ))
